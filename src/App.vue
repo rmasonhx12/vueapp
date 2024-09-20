@@ -1,7 +1,7 @@
 <template>
 <p>Welcome to Vue {{name}} loves {{wife}} A/F!</p>
 <p v-text="question"></p>  <!-- note v-directive is within selector like p -->
-<p v-html="htmlData" v-bind:id="id" v-bind:class="id" v-bind:style="style"></p>
+<p v-html="htmlData" :id="id" :class="id" :style="style"></p> <!-- shorten v-bind in vue3 to :dir  -->
 </template>
 
 <script>
